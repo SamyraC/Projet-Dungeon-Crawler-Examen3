@@ -1,0 +1,75 @@
+/* Add general styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .code-jeu {
+    display: grid;
+    grid-template-columns: repeat(25, 1fr); /*specification des lignes et les fonctions de dimensionnement*/ 
+    grid-template-rows: repeat(15, 1fr);
+    gap: 2px;
+    border: 2px solid #333;
+    background-color: #fff;
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .cell img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  
+  .joueur {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .monstre {
+    background-color: #ff4500;
+    color: pink;
+  }
+  
+  .tresor {
+    background-color: #32cd32;
+    color: purple;
+  }
+  
+  .mur {
+    background-color: #888;
+    color: brown;
+  }
+  
+  .vide {
+    background-color: orange;
+  }
+  
+  #recommencer-btn{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: yellow;
+    color: indigo;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #score {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
